@@ -215,15 +215,6 @@ def welcome(data=MENU, liquid_w=water, liquid1_m=milk, liquid2_c=coffee):
                 welcome(MENU, water, milk, coffee)
 
 
-
-
-
-
-
-
-
-
-
 welcome(MENU, water, milk, coffee)
 
 cappuccino_water = MENU['cappuccino']['cost']
