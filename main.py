@@ -35,8 +35,6 @@ milk = resources['milk']
 coffee = resources['coffee']
 
 total = profit
-print(total)
-
 
 def checkFor(data, flavor, ing, liquid):
     cup = data[flavor][ing][liquid]
@@ -68,6 +66,8 @@ def welcome(data=MENU, liquid_w=water, liquid1_m=milk, liquid2_c=coffee):
     if choose_one == 'espresso':
         print(f'Espresso price is {espresso_price} $!')
 
+    elif choose_one == 'off':
+        return
 
     elif choose_one == 'latte':
         print(f'Latte price is {latte_price} $!')
@@ -80,7 +80,7 @@ def welcome(data=MENU, liquid_w=water, liquid1_m=milk, liquid2_c=coffee):
 
     elif choose_one == 'cappuccino':
         print(f'Cappuccino price is {cappuccino_price} $!')
-
+    print('Insert coins please!')
     quarts = int(input('How many quarts?')) * 0.25
     dimes = int(input('How many dimes?')) * 0.10
     nickles = int(input('How many nickles?')) * 0.5
@@ -216,7 +216,4 @@ def welcome(data=MENU, liquid_w=water, liquid1_m=milk, liquid2_c=coffee):
 
 
 welcome(MENU, water, milk, coffee)
-
-cappuccino_water = MENU['cappuccino']['cost']
-
-print(math_operation(water, milk, coffee, cappuccino_water))
+print('Goodbye!')
